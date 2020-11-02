@@ -55,7 +55,7 @@ export function ajaxInXMLHttpRequest(
   // Check if body is null, if it's null, treat this request as a POST request.
   const xhrMethod: string = body ? "POST" : "GET";
   xhr.open(xhrMethod, url, async);
-  xhr.send(xhrMethod);
+  xhr.send(body);
 }
 
 /**
